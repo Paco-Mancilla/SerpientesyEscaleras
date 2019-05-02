@@ -1,9 +1,13 @@
-class dado {
-    constructor(){
-        this.num=0;
+class Dado{
+    constructor (lados){
+        this.lados=lados
     }
 
-    generarNumero(num){
-       let num=Math.floor(Math.random() * (0- 7)) + 0;
+    lanzar (){
+        return Math.floor(Math.random()*(7-1))+1
+    }
+    get lados(){
+        return this.lados;
     }
 }
+export default Dado

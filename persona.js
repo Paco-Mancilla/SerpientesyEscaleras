@@ -1,14 +1,19 @@
- class jugador{
-     constructor(){
+class Jugador{
+    constructor (){
         this.position=null;
-     }
-     setPosition(position){
-        this.position = position;
     }
+
+    setPosition(position){
+        this.position=position;
+    }
+
     getPosition(){
-        return this.position
+        return this.position;
     }
-    move(dice){
-        this.position += dice;
+
+    mover(dado){
+        position+=dado;
     }
- }
+}
+
+export default Jugador;
